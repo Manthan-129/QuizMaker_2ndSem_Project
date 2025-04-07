@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Enter Questions</title>
+    <link rel="stylesheet" href="styleforNumberQuestionpart2.css">
+    
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Enter Your Questions</h1>
+        <p id="progress"><span id="currentQ">0</span> out of <span id="totalQ"></span> questions completed</p>
+
+        <form id="questionForm">
+            <input type="text" id="question" placeholder="Enter question">
+            <input type="text" id="option1" placeholder="Option 1">
+            <input type="text" id="option2" placeholder="Option 2">
+            <input type="text" id="option3" placeholder="Option 3">
+            <input type="text" id="option4" placeholder="Option 4">
+            <select id="correctOption">
+                <option value="0">Option 1</option>
+                <option value="1">Option 2</option>
+                <option value="2">Option 3</option>
+                <option value="3">Option 4</option>
+            </select>
+            <button type="button" onclick="saveQuestion()">Save Question</button>
+        </form>
+        <button onclick="finishQuizSetup()">Finish & Start Quiz</button>
+    </div>
+</body>
+</html>

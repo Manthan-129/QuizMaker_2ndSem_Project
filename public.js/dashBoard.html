@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuizCrafter - Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to QuizCrafter</h1>
+        <div id="username-display"></div>
+        
+        <div class="dashboard-actions">
+            <button id="create-quiz-btn">Create New Quiz</button>
+            <button id="logout-btn">Logout</button>
+        </div>
+        
+        <h2>Your Quizzes</h2>
+        <div id="quizzes-container">
+            <p id="loading-message">Loading your quizzes...</p>
+            <div id="no-quizzes-message" style="display: none;">
+                <p>You haven't created any quizzes yet. Click the "Create New Quiz" button to get started!</p>
+            </div>
+            <div id="quiz-list"></div>
+        </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="dashboard.js"></script>
+</body>
+</html>

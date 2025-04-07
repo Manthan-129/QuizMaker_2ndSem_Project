@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Attempt Quiz</title>
+    <link rel="stylesheet" href="styleforAttemptQuizpart2.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h2>Attempt Quiz</h2>
+        <div id="quizContainer">
+            <h3 id="questionText">Loading question...</h3>
+            <div id="optionsContainer">Loading options...</div>
+        </div>
+        <div class="quiz-navigation">
+            <button id="prevBtn" onclick="prevQuestion()">Previous</button>
+            <button id="nextBtn" onclick="nextQuestion()">Next</button>
+            <button id="submitBtn" onclick="submitQuiz()">Submit</button>
+        </div>
+        <div id="quizResult"></div>
+    </div>
+</body>
+</html>
